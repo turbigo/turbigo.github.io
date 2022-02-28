@@ -9,7 +9,7 @@ def generator(name,surnme):
 
 	qr = qrcode.make('http://turbigo.github.io/cards/'+name+surnme+'.html')
 	type(qr); qr.save(name+surnme+'qrcode.jpg')
-	os.system('mv {name}{surname}qrcode.jpg cards/qrcode/')
+	os.system('mv {name}{surname}qrcode.jpg cards/qrcode')
 
 
 
@@ -38,9 +38,9 @@ def creation(name,surname,data_di_nascita,age,luogo_di_nascita,città_di_residen
 		<div class='title-content'>
 			<h1 class='title'> Città di Turbigo </h1>
 		</div>
-		<img class='profile-img' src='cards/src/media/{name}{surname}/photo.jpg'>
-		<img class='logo-turbigo-img' src='cards/src/static/logo-turbigo.jpg'> 
-		<img class='firma-img' src='cards/src/media/{name}{surname}/firma.jpg'> 
+		<img class='profile-img' src='src/media/{name}{surname}/photo.jpg'>
+		<img class='logo-turbigo-img' src='src/static/logo-turbigo.jpg'> 
+		<img class='firma-img' src='src/media/{name}{surname}/firma.jpg'> 
 		
 		<p style="position: absolute;top:800px;left:50px;"> Name: {name} </p>
 		<p style="position: absolute;top:875px;left:50px;"> Surname: {surname} </p>
@@ -109,8 +109,8 @@ luogo_di_nascita = input('LUOGO DI NASCITA > ')
 città_di_residenza = input('CITTÀ DI RESIDENZA > ')
 domicilio = input('DOMICILIO > ')
 
-#creation(name,surname,data_di_nascita,age,luogo_di_nascita,città_di_residenza,domicilio)
-generator("Oliver","Green")
+creation(name,surname,data_di_nascita,age,luogo_di_nascita,città_di_residenza,domicilio)
+#generator("Oliver","Green")
 
 
 
