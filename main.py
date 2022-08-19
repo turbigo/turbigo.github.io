@@ -109,8 +109,8 @@ luogo_di_nascita = input('LUOGO DI NASCITA > ')
 città_di_residenza = input('CITTÀ DI RESIDENZA > ')
 domicilio = input('DOMICILIO > ')
 
-creation(name,surname,data_di_nascita,age,luogo_di_nascita,città_di_residenza,domicilio)
+#creation(name,surname,data_di_nascita,age,luogo_di_nascita,città_di_residenza,domicilio)
 #generator("Oliver","Green")
 
-
+revocation("Daniele","Marinelli")
 
